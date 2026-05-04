@@ -1,0 +1,121 @@
+import type { Config } from 'tailwindcss';
+
+export default {
+  content: ['./src/**/*.{html,ts}'],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        // Brand Core
+        'brand-navy': '#09172d',
+        'brand-gold': '#c0a271',
+        'brand-gold-light': '#e2c28e',
+        'brand-gold-pale': '#ffdeaa',
+        'brand-cream': '#fbf8fb',
+        'brand-eblue':'#1662a2',
+        'brand-soft-orange':'#fee7cb',
+        'brand-on-surface':'#143454',
+        'brand-color-on-tertiary-container':'#631a52',
+
+        // Material Design Surface Tokens
+        'primary': '#000000',
+        'primary-container': '#0e1c32',
+        'on-primary': '#ffffff',
+        'on-primary-container': '#77849f',
+        'primary-fixed': '#d7e3ff',
+        'primary-fixed-dim': '#bac7e4',
+        'on-primary-fixed': '#0e1c32',
+        'on-primary-fixed-variant': '#3a475f',
+
+        'secondary': '#5a5e69',
+        'secondary-container': '#dcdfed',
+        'on-secondary': '#ffffff',
+        'on-secondary-container': '#5e636e',
+        'secondary-fixed': '#dee2ef',
+        'secondary-fixed-dim': '#c2c6d3',
+        'on-secondary-fixed': '#171c25',
+        'on-secondary-fixed-variant': '#424751',
+
+        'tertiary': '#000000',
+        'tertiary-container': '#271900',
+        'on-tertiary': '#ffffff',
+        'on-tertiary-container': '#9b8052',
+        'tertiary-fixed': '#ffdeaa',
+        'tertiary-fixed-dim': '#e2c28e',
+        'on-tertiary-fixed': '#271900',
+        'on-tertiary-fixed-variant': '#59431b',
+
+        'surface': '#fbf8fb',
+        'surface-dim': '#dbd9db',
+        'surface-bright': '#fbf8fb',
+        'surface-variant': '#e4e2e4',
+        'surface-tint': '#525f78',
+        'surface-container-lowest': '#ffffff',
+        'surface-container-low': '#f5f3f5',
+        'surface-container': '#f0edef',
+        'surface-container-high': '#eae7ea',
+        'surface-container-highest': '#e4e2e4',
+        'on-surface': '#1b1b1d',
+        'on-surface-variant': '#45474d',
+        'on-background': '#1b1b1d',
+        'background': '#fbf8fb',
+
+        'inverse-surface': '#303032',
+        'inverse-on-surface': '#f2f0f2',
+        'inverse-primary': '#bac7e4',
+
+        'outline': '#75777e',
+        'outline-variant': '#c5c6cd',
+
+        'error': '#ba1a1a',
+        'error-container': '#ffdad6',
+        'on-error': '#ffffff',
+        'on-error-container': '#93000a',
+      },
+      fontFamily: {
+        headline: ['"Noto Serif"', 'serif'],
+        body: ['"Work Sans"', 'sans-serif'],
+        label: ['"Work Sans"', 'sans-serif'],
+        mono: ['"Work Sans"', 'monospace'],
+      },
+      borderRadius: {
+        DEFAULT: '0.125rem',
+        lg: '0.25rem',
+        xl: '0.5rem',
+        full: '0.75rem',
+      },
+      fontSize: {
+        'display-lg': ['3.5rem', { lineHeight: '1.1', letterSpacing: '-0.02em' }],
+        'display-md': ['2.8rem', { lineHeight: '1.15', letterSpacing: '-0.015em' }],
+        'headline-lg': ['2rem', { lineHeight: '1.2', letterSpacing: '-0.01em' }],
+        'headline-md': ['1.75rem', { lineHeight: '1.25' }],
+        'title-lg': ['1.375rem', { lineHeight: '1.3' }],
+        'title-md': ['1.125rem', { lineHeight: '1.4' }],
+        'label-lg': ['0.875rem', { lineHeight: '1.4', letterSpacing: '0.1em' }],
+        'label-sm': ['0.75rem', { lineHeight: '1.4', letterSpacing: '0.1em' }],
+        'body-lg': ['1rem', { lineHeight: '1.6' }],
+        'body-md': ['0.875rem', { lineHeight: '1.6' }],
+      },
+      boxShadow: {
+        'editorial': '0 6px 24px 0 rgba(27,27,29,0.06)',
+        'editorial-lg': '0 16px 48px 0 rgba(27,27,29,0.08)',
+        'float': '0 2px 8px 0 rgba(27,27,29,0.04)',
+      },
+      backgroundImage: {
+        'gradient-editorial': 'radial-gradient(circle at top right, #0e1c32 0%, #000000 100%)',
+        'gradient-navy': 'linear-gradient(135deg, #09172d 0%, #000000 100%)',
+        'gradient-gold': 'linear-gradient(90deg, #e2c28e 0%, #c0a271 100%)',
+        'gradient-hero': 'linear-gradient(to right, rgba(9,23,45,0.9) 0%, rgba(9,23,45,0.6) 50%, transparent 100%)',
+      },
+      backdropBlur: {
+        glass: '12px',
+        'glass-lg': '20px',
+      },
+      letterSpacing: {
+        editorial: '0.2em',
+        widest: '0.3em',
+      },
+    },
+  },
+  plugins: [],
+} satisfies Config;
